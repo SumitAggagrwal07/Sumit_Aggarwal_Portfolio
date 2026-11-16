@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-canvas: #0b0b0c;
+  --color-surface: #111113;
+  --color-raised: #18181c;
+  --color-hairline: #26262b;
+  --color-bone: #f2eee8;
+  --color-ash: #9c978f;
+  --color-ember: #e8683a;
+  --color-paper: #f4f0eb;
+}
+
+html:not(.dark) {
+  --color-canvas: #f8f6f2;
+  --color-surface: #ffffff;
+  --color-raised: #eee9e0;
+  --color-hairline: #a89d8d;
+  --color-bone: #141312;
+  --color-ash: #545048;
+  --color-ember: #df5827;
+  --color-paper: #ffffff;
+}
+
+html:not(.dark) [class*="border-hairline"] {
+  border-color: #c4baa9;
+}
+
+html:not(.dark) [class*="border-hairline/80"],
+html:not(.dark) [class*="border-hairline/90"] {
+  border-color: #b2a694;
+}
+
+html:not(.dark) [class*="border-hairline/60"],
+html:not(.dark) [class*="border-hairline/40"] {
+  border-color: #cfc6b7;
+}
+
+html:not(.dark) [class*="border-hairline/20"] {
+  border-color: #ded7cc;
+}
+
+html:not(.dark) .shadow-md,
+html:not(.dark) .shadow-xl,
+html:not(.dark) .shadow-2xl {
+  box-shadow: 0 10px 25px -8px rgba(60, 52, 42, 0.09), 0 4px 6px -4px rgba(60, 52, 42, 0.04);
+}
+
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  background-color: var(--color-canvas);
+  color: var(--color-bone);
+  overflow-x: hidden;
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+.font-serif-italic {
+  font-family: "Instrument Serif", serif;
+  font-style: italic;
+}
+
+.font-mono-tracked {
+  font-family: "JetBrains Mono", monospace;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.bg-grain {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.035) 1px, transparent 0);
+  background-size: 24px 24px;
+}
