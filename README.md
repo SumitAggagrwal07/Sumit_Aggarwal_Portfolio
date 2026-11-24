@@ -1,4 +1,4 @@
-# Sarthak Sharma / Sumit Aggarwal — Premium 3D Developer Portfolio
+# Sumit Aggarwal — Premium 3D Developer Portfolio
 
 A dark-aesthetic, editorial 3D personal portfolio engineered with React 18, Vite, Tailwind CSS, Motion, Three.js, React Three Fiber, Lenis smooth scroll, and custom GLSL shaders.
 
